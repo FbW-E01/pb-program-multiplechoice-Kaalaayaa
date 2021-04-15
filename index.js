@@ -86,6 +86,29 @@ if (percentageComplete < 30){
 } else if (percentageComplete === 100){
     console.log("You're there. Well done!");
 }
+
+  const percentage = 45;
+
+  switch(true){
+    case (percentage < 30):
+        console.log("Still a long way to go");
+        break;
+    case (percentage >30 && percentage < 50):
+        console.log("Slowly getting there");
+        break;
+    case (percentage >51 && percentage < 80):
+        console.log("You can do it!");
+        break;
+    case (percentage >81 && percentage < 99):
+        console.log("This is the last push!");
+        break;
+    case (percentage === 100):
+          console.log("You're there. Well done!");
+          break;
+    default:
+        console.log("Sorry its not working")
+  }
+
 // #### 5. Differences
 // * When should you use a switch statement versus an `if else` statement. Comment your answer in your js file.
-we should use a switch statement when we just use simple value like number or strings but if we have to do comparaison and && or || its better to use switch.
+// we should use a switch statement when we just use simple value like number or strings and that we want to be fase if we have a lot of options. but if we have to do comparaison and && or || its better to use if else.
